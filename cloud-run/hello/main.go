@@ -19,5 +19,5 @@ func main() {
 }
 
 func handler(w http.ResponseWriter, req *http.Request) {
-	w.Write([]byte("Hello: " + os.Getenv("K_REVISION")))
+	w.Write([]byte("Hello Cloud Run: " + os.Getenv("K_REVISION")))
 }
