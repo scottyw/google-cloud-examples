@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/$PROJECT_ID/hello'
+  args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/hello', '.' ]
+images:
+- 'gcr.io/$PROJECT_ID/hello'
