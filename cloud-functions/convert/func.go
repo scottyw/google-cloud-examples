@@ -7,8 +7,8 @@ import (
 	"strconv"
 )
 
-// Run this command inside the "cloud-functions" dir
-// gcloud functions deploy --source=convert --trigger-http --runtime=go111 --allow-unauthenticated FahrenheitToCelsius
+// Run this command inside the "cloud-functions/convert" dir
+// gcloud functions deploy --source=. --trigger-http --runtime=go111 --allow-unauthenticated FahrenheitToCelsius
 
 // FahrenheitToCelsius converts celsius to fahrenheit
 func FahrenheitToCelsius(w http.ResponseWriter, r *http.Request) {
